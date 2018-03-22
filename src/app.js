@@ -6,7 +6,11 @@ import configureStore from "./store/configureStore";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
+import { addExpense } from "./actions/expenses";
+
 const store = configureStore();
+
+store.dispatch(addExpense({ description: "Water Bill", amount: 3000 }));
 
 ReactDOM.render(
   <Provider store={store}>
