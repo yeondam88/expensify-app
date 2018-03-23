@@ -12,11 +12,11 @@ import getVisibleExpenses from "./selectors/expenses";
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: "Water Bill", amount: 3000 }));
-store.dispatch(
-  addExpense({ description: "internet Bill", amount: 2000, createdAt: 1000 })
-);
-store.dispatch(addExpense({ description: "gas Bill", amount: 255 }));
+// store.dispatch(addExpense({ description: "Water Bill", amount: 3000 }));
+// store.dispatch(
+//   addExpense({ description: "internet Bill", amount: 2000, createdAt: 1000 })
+// );
+// store.dispatch(addExpense({ description: "gas Bill", amount: 255 }));
 
 const state = store.getState();
 
