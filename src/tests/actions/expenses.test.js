@@ -26,3 +26,41 @@ test("should setup edit expense action object", () => {
     }
   });
 });
+
+test("should setup add expense action object with provided values", () => {
+  const expenseData = {
+    description: "Rent",
+    amount: 199000,
+    createdAt: 1000,
+    note: "This is testing values"
+  };
+
+  const action = addExpense(expenseData);
+
+  expect(action).toEqual({
+    type: "ADD_EXPENSE",
+    expense: {
+      ...expenseData,
+      id: expect.any(String)
+    }
+  });
+});
+
+test("should setup add expense action object with default values", () => {
+  const expenseDefaultData = {
+    description: "",
+    note: "",
+    amount: 0,
+    createdAt: 0
+  };
+
+  const action = addExpense(expenseDefaultData);
+
+  expect(action).toEqual({
+    type: "ADD_EXPENSE",
+    expense: {
+      ...expenseDefaultData,
+      id: expect.any(String)
+    }
+  });
+});
