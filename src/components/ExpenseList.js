@@ -7,11 +7,19 @@ import { removeExpense } from "../actions/expenses";
 const ExpenseList = props => (
   <div>
     <h1>Expense List</h1>
-    {props.expenses.map(expense => {
-      return (
-        <ExpenseListItem key={expense.id} {...expense} remove={props.remove} />
-      );
-    })}
+    {props.expenses.length ? (
+      props.expenses.map(expense => {
+        return (
+          <ExpenseListItem
+            key={expense.id}
+            {...expense}
+            remove={props.remove}
+          />
+        );
+      })
+    ) : (
+      <p>No expenses..</p>
+    )}
   </div>
 );
 
