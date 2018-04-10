@@ -26,3 +26,9 @@ database.ref().set({
 database.ref().set({
   age: 30
 });
+
+database
+  .ref("age")
+  .remove()
+  .then(() => console.log("Data is removed"))
+  .catch(e => console.log(e));
