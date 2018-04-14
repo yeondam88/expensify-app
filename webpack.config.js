@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+<<<<<<< HEAD
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 if ((process.env.NODE_ENV = "test")) {
@@ -14,6 +15,8 @@ if ((process.env.NODE_ENV = "test")) {
   });
 }
 
+=======
+>>>>>>> parent of 79f2d1c... setting up env variables
 module.exports = env => {
   const isProduction = env === "production";
   const CSSExtract = new ExtractTextPlugin("styles.css");
