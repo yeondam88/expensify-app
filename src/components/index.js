@@ -4,6 +4,7 @@ import EditExpensePage from "./EditExpensePage";
 import ExpenseDashboardPage from "./ExpenseDashboardPage";
 import HelpPage from "./HelpPage";
 import NotFoundPage from "./NotFoundPage";
+import LoginPage from "./LoginPage";
 
 export {
   Header,
@@ -11,5 +12,6 @@ export {
   EditExpensePage,
   ExpenseDashboardPage,
   HelpPage,
-  NotFoundPage
+  NotFoundPage,
+  LoginPage
 };
