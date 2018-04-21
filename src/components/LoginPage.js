@@ -3,10 +3,18 @@ import { connect } from "react-redux";
 import { startLogin } from "../actions/auth";
 
 class LoginPage extends Component {
+  state = {
+    login: false
+  };
+
   render() {
     return (
       <div>
-        <button onClick={this.props.startLogin}>Login</button>
+        {this.state.login ? (
+          <button onClick={this.props.startLogin}>Login</button>
+        ) : (
+          <button onClick={this.props.startLogin}>Logout</button>
+        )}
       </div>
     );
   }
