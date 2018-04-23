@@ -10,7 +10,7 @@ import { firebase } from "./firebase/firebase";
 
 const store = configureStore();
 
-const hasRendered = false;
+let hasRendered = false;
 
 const renderApp = () => {
   if (!hasRendered) {
