@@ -7,9 +7,16 @@ import { removeExpense } from "../actions/expenses";
 class ExpenseList extends Component {
   render() {
     return (
-      <div>
-        <h1>Expense List</h1>
-        {this.props.expenses.length ? (
+      <div className="content-container">
+        <div className="list-header">
+          <div className="show-for-mobile">Expenses</div>
+          <div className="show-for-desktop">Expense</div>
+          <div className="show-for-desktop">Amount</div>
+        </div>
+
+        {this.props.expenses.length === 0 ? (
+          <p>No expenses</p>
+        ) : (
           this.props.expenses.map(expense => {
             return (
               <ExpenseListItem
@@ -19,8 +26,6 @@ class ExpenseList extends Component {
               />
             );
           })
-        ) : (
-          <p>No expenses..</p>
         )}
       </div>
     );
