@@ -14,19 +14,23 @@ class ExpenseList extends Component {
           <div className="show-for-desktop">Amount</div>
         </div>
 
-        {this.props.expenses.length === 0 ? (
-          <p>No expenses</p>
-        ) : (
-          this.props.expenses.map(expense => {
-            return (
-              <ExpenseListItem
-                key={expense.id}
-                {...expense}
-                remove={this.props.remove}
-              />
-            );
-          })
-        )}
+        <div className="list-body">
+          {this.props.expenses.length === 0 ? (
+            <div className="list-item list-item--message">
+              <span>No expenses</span>
+            </div>
+          ) : (
+            this.props.expenses.map(expense => {
+              return (
+                <ExpenseListItem
+                  key={expense.id}
+                  {...expense}
+                  remove={this.props.remove}
+                />
+              );
+            })
+          )}
+        </div>
       </div>
     );
   }
