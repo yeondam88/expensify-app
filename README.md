@@ -5,6 +5,8 @@ Complete the React & Redux course on Udemy (https://www.udemy.com/react-2nd-edit
 
 Building a complex app with React & Redux
 
+See working demo (https://react-redux-expensify-tutorial.herokuapp.com/)[Go]
+
 ## Features
 - Add the expenses
 - Remove the expense
