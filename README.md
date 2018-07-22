@@ -1,11 +1,11 @@
 # expensify-app
 Udemy React Tutorial 
 
-Complete the React & Redux course on Udemy (https://www.udemy.com/react-2nd-edition)[Link]
+Complete the React & Redux course on Udemy [Link](https://www.udemy.com/react-2nd-edition)
 
 Building a complex app with React & Redux
 
-See working demo (https://react-redux-expensify-tutorial.herokuapp.com/)[Go]
+See working demo [Link](https://react-redux-expensify-tutorial.herokuapp.com/)
 
 ## Features
 - Add the expenses
@@ -20,6 +20,3 @@ See working demo (https://react-redux-expensify-tutorial.herokuapp.com/)[Go]
 - Redux
 - React-Router-Dom
 
-
-### TODO:
-Finish the works!!
