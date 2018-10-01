@@ -12,6 +12,10 @@ Building a complex app with React & Redux
 
 See working demo [Link](https://react-redux-expensify-tutorial.herokuapp.com/)
 
+<p>
+  <img src="expensify.png" />
+</p>
+
 ## Features
 - Add the expenses
 - Remove the expense
