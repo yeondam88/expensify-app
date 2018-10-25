@@ -10,6 +10,11 @@ Building a complex app with React & Redux
   <img src="https://res.cloudinary.com/yeondam88/image/upload/v1538025976/webpack-original.svg" width="50" />
 </p>
 
+## Tech Spec
+- React
+- Redux
+- React-Router-Dom
+
 See working demo [Link](https://react-redux-expensify-tutorial.herokuapp.com/)
 
 <p>
@@ -24,8 +29,8 @@ See working demo [Link](https://react-redux-expensify-tutorial.herokuapp.com/)
 - Filter by date or amount
 - etc..
 
-## Tech Spec
-- React
+## What I've learned
+- Firebase 🔥
+- User Authentication 👨‍💻
 - Redux
-- React-Router-Dom
 
